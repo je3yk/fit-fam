@@ -1,0 +1,104 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "confirm": "Confirm"
+  },
+  "nav": {
+    "planner": "Planner",
+    "recipes": "Recipes",
+    "shopping": "Shopping List",
+    "family": "Family",
+    "settings": "Settings"
+  },
+  "family": {
+    "title": "Family",
+    "members": "Members",
+    "addMember": "Add Member",
+    "inviteMember": "Invite Member",
+    "settings": "Family Settings",
+    "language": "Language",
+    "createFamily": "Create Your Family",
+    "createFamilyDescription": "Start by setting up your family group to begin planning meals and activities together."
+  },
+  "member": {
+    "name": "Name",
+    "role": "Role",
+    "dateOfBirth": "Date of Birth",
+    "dietaryNotes": "Dietary Notes",
+    "roles": {
+      "owner": "Owner",
+      "adult": "Adult",
+      "child": "Child"
+    }
+  },
+  "planner": {
+    "title": "Weekly Planner",
+    "thisWeek": "This Week",
+    "nextWeek": "Next Week",
+    "addDish": "Add Dish",
+    "noMeals": "No meals planned",
+    "totalPortions": "Total portions",
+    "batchCooking": "Batch cooking"
+  },
+  "mealSlot": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snack",
+    "addSlot": "Add Meal Slot",
+    "editSlot": "Edit Meal Slot",
+    "name": "Slot Name",
+    "timeFrom": "From",
+    "timeTo": "To"
+  },
+  "recipe": {
+    "title": "Recipes",
+    "add": "Add Recipe",
+    "edit": "Edit Recipe",
+    "name": "Recipe Name",
+    "description": "Description",
+    "servings": "Base Servings",
+    "ingredients": "Ingredients",
+    "addIngredient": "Add Ingredient",
+    "photo": "Photo",
+    "scaleServings": "Scale for servings",
+    "noRecipes": "No recipes yet"
+  },
+  "ingredient": {
+    "title": "Ingredients",
+    "add": "Add Ingredient",
+    "edit": "Edit Ingredient",
+    "name": "Name",
+    "unit": "Default Unit",
+    "category": "Category",
+    "quantity": "Quantity",
+    "categories": {
+      "produce": "Produce",
+      "dairy": "Dairy",
+      "meat": "Meat & Fish",
+      "pantry": "Pantry",
+      "bakery": "Bakery",
+      "frozen": "Frozen",
+      "beverages": "Beverages",
+      "other": "Other"
+    }
+  },
+  "shopping": {
+    "title": "Shopping List",
+    "generate": "Generate List",
+    "regenerate": "Regenerate",
+    "addItem": "Add Item",
+    "manualItem": "Add manual item",
+    "noItems": "Shopping list is empty",
+    "generated": "Generated from meal plan",
+    "manual": "Manual items",
+    "checkedOff": "Checked off"
+  }
+}

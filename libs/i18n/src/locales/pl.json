@@ -1,0 +1,104 @@
+{
+  "common": {
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "add": "Dodaj",
+    "back": "Wróć",
+    "loading": "Ładowanie...",
+    "error": "Coś poszło nie tak",
+    "confirm": "Potwierdź"
+  },
+  "nav": {
+    "planner": "Planer",
+    "recipes": "Przepisy",
+    "shopping": "Lista zakupów",
+    "family": "Rodzina",
+    "settings": "Ustawienia"
+  },
+  "family": {
+    "title": "Rodzina",
+    "members": "Członkowie",
+    "addMember": "Dodaj członka",
+    "inviteMember": "Zaproś członka",
+    "settings": "Ustawienia rodziny",
+    "language": "Język",
+    "createFamily": "Utwórz swoją rodzinę",
+    "createFamilyDescription": "Zacznij od założenia grupy rodzinnej, aby wspólnie planować posiłki i aktywności."
+  },
+  "member": {
+    "name": "Imię i nazwisko",
+    "role": "Rola",
+    "dateOfBirth": "Data urodzenia",
+    "dietaryNotes": "Uwagi dietetyczne",
+    "roles": {
+      "owner": "Właściciel",
+      "adult": "Dorosły",
+      "child": "Dziecko"
+    }
+  },
+  "planner": {
+    "title": "Tygodniowy planer",
+    "thisWeek": "Ten tydzień",
+    "nextWeek": "Następny tydzień",
+    "addDish": "Dodaj danie",
+    "noMeals": "Brak zaplanowanych posiłków",
+    "totalPortions": "Łączna liczba porcji",
+    "batchCooking": "Gotowanie na zapas"
+  },
+  "mealSlot": {
+    "breakfast": "Śniadanie",
+    "lunch": "Obiad",
+    "dinner": "Kolacja",
+    "snack": "Przekąska",
+    "addSlot": "Dodaj posiłek",
+    "editSlot": "Edytuj posiłek",
+    "name": "Nazwa posiłku",
+    "timeFrom": "Od",
+    "timeTo": "Do"
+  },
+  "recipe": {
+    "title": "Przepisy",
+    "add": "Dodaj przepis",
+    "edit": "Edytuj przepis",
+    "name": "Nazwa przepisu",
+    "description": "Opis",
+    "servings": "Liczba porcji bazowych",
+    "ingredients": "Składniki",
+    "addIngredient": "Dodaj składnik",
+    "photo": "Zdjęcie",
+    "scaleServings": "Skaluj dla porcji",
+    "noRecipes": "Brak przepisów"
+  },
+  "ingredient": {
+    "title": "Składniki",
+    "add": "Dodaj składnik",
+    "edit": "Edytuj składnik",
+    "name": "Nazwa",
+    "unit": "Domyślna jednostka",
+    "category": "Kategoria",
+    "quantity": "Ilość",
+    "categories": {
+      "produce": "Warzywa i owoce",
+      "dairy": "Nabiał",
+      "meat": "Mięso i ryby",
+      "pantry": "Spiżarnia",
+      "bakery": "Pieczywo",
+      "frozen": "Mrożonki",
+      "beverages": "Napoje",
+      "other": "Inne"
+    }
+  },
+  "shopping": {
+    "title": "Lista zakupów",
+    "generate": "Wygeneruj listę",
+    "regenerate": "Odśwież",
+    "addItem": "Dodaj pozycję",
+    "manualItem": "Dodaj ręcznie",
+    "noItems": "Lista zakupów jest pusta",
+    "generated": "Wygenerowane z planu posiłków",
+    "manual": "Pozycje ręczne",
+    "checkedOff": "Zakupione"
+  }
+}

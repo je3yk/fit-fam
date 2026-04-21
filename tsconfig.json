@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "files": [],
+  "references": [
+    { "path": "./apps/web/tsconfig.json" },
+    { "path": "./apps/mobile/tsconfig.json" },
+    { "path": "./libs/api/tsconfig.json" },
+    { "path": "./libs/db/tsconfig.json" },
+    { "path": "./libs/types/tsconfig.json" },
+    { "path": "./libs/i18n/tsconfig.json" }
+  ]
+}

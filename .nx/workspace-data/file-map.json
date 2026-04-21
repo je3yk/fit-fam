@@ -1,0 +1,573 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.6.5",
+  "pathMappings": {
+    "@fit-fam/types": [
+      "libs/types/src/index.ts"
+    ],
+    "@fit-fam/i18n": [
+      "libs/i18n/src/index.ts"
+    ],
+    "@fit-fam/db": [
+      "libs/db/src/index.ts"
+    ],
+    "@fit-fam/api": [
+      "libs/api/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/expo/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build"
+      }
+    },
+    {
+      "name": "@nx/js/typescript",
+      "options": {
+        "typeCheckTargetName": "typecheck",
+        "buildTargetName": "build-types"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".agents/skills/link-workspace-packages/SKILL.md",
+        "hash": "6638592300654417978"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/SKILL.md",
+        "hash": "8399173415832764241"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/references/fix-flows.md",
+        "hash": "14499115380699629375"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/scripts/ci-poll-decide.mjs",
+        "hash": "11489724214132048566"
+      },
+      {
+        "file": ".agents/skills/monitor-ci/scripts/ci-state-update.mjs",
+        "hash": "13401974159889364904"
+      },
+      {
+        "file": ".agents/skills/nx-generate/SKILL.md",
+        "hash": "16801959272346088877"
+      },
+      {
+        "file": ".agents/skills/nx-import/SKILL.md",
+        "hash": "9709061508228126022"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/ESLINT.md",
+        "hash": "3100736771536685484"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/GRADLE.md",
+        "hash": "15868511153961490698"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/JEST.md",
+        "hash": "8022966628634571060"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/NEXT.md",
+        "hash": "8705422121624482541"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/TURBOREPO.md",
+        "hash": "6654032474246573297"
+      },
+      {
+        "file": ".agents/skills/nx-import/references/VITE.md",
+        "hash": "5793928500507593678"
+      },
+      {
+        "file": ".agents/skills/nx-plugins/SKILL.md",
+        "hash": "4717624081372438208"
+      },
+      {
+        "file": ".agents/skills/nx-run-tasks/SKILL.md",
+        "hash": "10723914446406921246"
+      },
+      {
+        "file": ".agents/skills/nx-workspace/SKILL.md",
+        "hash": "56694506768298655"
+      },
+      {
+        "file": ".agents/skills/nx-workspace/references/AFFECTED.md",
+        "hash": "10577828056523124002"
+      },
+      {
+        "file": ".claude/settings.json",
+        "hash": "4174402289047638020"
+      },
+      {
+        "file": ".cursor/agents/ci-monitor-subagent.md",
+        "hash": "14869577228457002810"
+      },
+      {
+        "file": ".env.example",
+        "hash": "6655345380716770029"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "17046705675788919135"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5248284603973290712"
+      },
+      {
+        "file": "AGENTS.md",
+        "hash": "3693179293707062853"
+      },
+      {
+        "file": "CLAUDE.md",
+        "hash": "3693179293707062853"
+      },
+      {
+        "file": "babel.config.json",
+        "hash": "5546405625092116747"
+      },
+      {
+        "file": "biome.json",
+        "hash": "7106981355929004760"
+      },
+      {
+        "file": "bun.lock",
+        "hash": "7887736747731530623"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "16722893325550710233"
+      },
+      {
+        "file": "docs/ARCHITECTURE.md",
+        "hash": "2043483533189459070"
+      },
+      {
+        "file": "docs/ENTITIES.md",
+        "hash": "15307085850994691102"
+      },
+      {
+        "file": "docs/FEATURES.md",
+        "hash": "1757558267420131056"
+      },
+      {
+        "file": "docs/ROADMAP.md",
+        "hash": "2170323675789128051"
+      },
+      {
+        "file": "docs/v1/ISSUES.md",
+        "hash": "680013847592660438"
+      },
+      {
+        "file": "docs/v1/PRD.md",
+        "hash": "13114159561970170532"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "9809018075080772333"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "461683640337035071"
+      },
+      {
+        "file": "package.json",
+        "hash": "16973068000314205549"
+      },
+      {
+        "file": "tools/scripts/eas-build-post-install.mjs",
+        "hash": "18390423807559123090"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "12596423534630714594"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "12344441257022645078"
+      }
+    ],
+    "projectFileMap": {
+      "api": [
+        {
+          "file": "libs/api/project.json",
+          "hash": "16841842970274399721"
+        },
+        {
+          "file": "libs/api/src/index.ts",
+          "hash": "12586935006249659665"
+        },
+        {
+          "file": "libs/api/src/lib/api.ts",
+          "hash": "5200810597212290822"
+        },
+        {
+          "file": "libs/api/tsconfig.json",
+          "hash": "7566250232229013883"
+        },
+        {
+          "file": "libs/api/tsconfig.lib.json",
+          "hash": "15798669420171897096"
+        }
+      ],
+      "web": [
+        {
+          "file": "apps/web/.gitignore",
+          "hash": "1118407734211641261"
+        },
+        {
+          "file": "apps/web/.prettierignore",
+          "hash": "1605439555097273006"
+        },
+        {
+          "file": "apps/web/.prettierrc",
+          "hash": "9424103333259566884"
+        },
+        {
+          "file": "apps/web/README.md",
+          "hash": "18077613076765167237"
+        },
+        {
+          "file": "apps/web/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web/app/globals.css",
+          "hash": "1854361796374259631"
+        },
+        {
+          "file": "apps/web/app/layout.tsx",
+          "hash": "1535595999999047661",
+          "deps": [
+            "npm:next@16.1.7"
+          ]
+        },
+        {
+          "file": "apps/web/app/page.tsx",
+          "hash": "550853116784874406"
+        },
+        {
+          "file": "apps/web/components.json",
+          "hash": "7912338655951728013"
+        },
+        {
+          "file": "apps/web/components/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/components/theme-provider.tsx",
+          "hash": "6405334564889683486",
+          "deps": [
+            "npm:react@19.2.5",
+            "npm:next-themes@0.4.6"
+          ]
+        },
+        {
+          "file": "apps/web/components/ui/button.tsx",
+          "hash": "718895744802362720",
+          "deps": [
+            "npm:react@19.2.5",
+            "npm:class-variance-authority@0.7.1",
+            "npm:radix-ui@1.4.3"
+          ]
+        },
+        {
+          "file": "apps/web/eslint.config.mjs",
+          "hash": "11456145150381806295",
+          "deps": [
+            "npm:eslint@9.39.4",
+            "npm:eslint-config-next@16.1.7"
+          ]
+        },
+        {
+          "file": "apps/web/hooks/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/lib/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/lib/utils.ts",
+          "hash": "6483145186850064023",
+          "deps": [
+            "npm:clsx@2.1.1",
+            "npm:tailwind-merge@3.5.0"
+          ]
+        },
+        {
+          "file": "apps/web/next.config.mjs",
+          "hash": "10083512545392354908"
+        },
+        {
+          "file": "apps/web/package.json",
+          "hash": "137463717468706288",
+          "deps": [
+            "npm:@eslint/eslintrc@3.3.5",
+            "npm:@tailwindcss/postcss@4.2.4",
+            "npm:@types/node@25.6.0",
+            "npm:@types/react@19.2.14",
+            "npm:@types/react-dom@19.2.3",
+            "npm:eslint@9.39.4",
+            "npm:eslint-config-next@16.1.7",
+            "npm:prettier@3.8.3",
+            "npm:prettier-plugin-tailwindcss@0.7.2",
+            "npm:postcss@8.5.10",
+            "npm:tailwindcss@4.2.4",
+            "npm:typescript@5.9.3",
+            "npm:class-variance-authority@0.7.1",
+            "npm:clsx@2.1.1",
+            "npm:lucide-react@1.8.0",
+            "npm:next@16.1.7",
+            "npm:next-themes@0.4.6",
+            "npm:radix-ui@1.4.3",
+            "npm:react@19.2.5",
+            "npm:react-dom@19.2.5",
+            "npm:shadcn@4.4.0",
+            "npm:tailwind-merge@3.5.0",
+            "npm:tw-animate-css"
+          ]
+        },
+        {
+          "file": "apps/web/postcss.config.mjs",
+          "hash": "11256059071270455311"
+        },
+        {
+          "file": "apps/web/project.json",
+          "hash": "9004004365079482733"
+        },
+        {
+          "file": "apps/web/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "18131842182186935379"
+        }
+      ],
+      "types": [
+        {
+          "file": "libs/types/project.json",
+          "hash": "6339324592332583107"
+        },
+        {
+          "file": "libs/types/src/index.ts",
+          "hash": "1748383720051645230"
+        },
+        {
+          "file": "libs/types/src/lib/types.ts",
+          "hash": "5476929482655057349"
+        },
+        {
+          "file": "libs/types/tsconfig.json",
+          "hash": "7566250232229013883"
+        },
+        {
+          "file": "libs/types/tsconfig.lib.json",
+          "hash": "15798669420171897096"
+        }
+      ],
+      "db": [
+        {
+          "file": "libs/db/project.json",
+          "hash": "8394834003647524616"
+        },
+        {
+          "file": "libs/db/src/index.ts",
+          "hash": "6334284652231062490"
+        },
+        {
+          "file": "libs/db/src/lib/db.ts",
+          "hash": "8754058650825764531"
+        },
+        {
+          "file": "libs/db/tsconfig.json",
+          "hash": "7566250232229013883"
+        },
+        {
+          "file": "libs/db/tsconfig.lib.json",
+          "hash": "15798669420171897096"
+        }
+      ],
+      "mobile": [
+        {
+          "file": "apps/mobile/.babelrc.js",
+          "hash": "231774045518377938"
+        },
+        {
+          "file": "apps/mobile/app.json",
+          "hash": "2911149201210773197"
+        },
+        {
+          "file": "apps/mobile/assets/fonts/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/mobile/assets/images/adaptive-icon.png",
+          "hash": "16102135492459408350"
+        },
+        {
+          "file": "apps/mobile/assets/images/favicon.png",
+          "hash": "10556792184362654649"
+        },
+        {
+          "file": "apps/mobile/assets/images/icon.png",
+          "hash": "14252482080276080187"
+        },
+        {
+          "file": "apps/mobile/assets/images/splash-icon.png",
+          "hash": "16102135492459408350"
+        },
+        {
+          "file": "apps/mobile/eas.json",
+          "hash": "6330161018993400891"
+        },
+        {
+          "file": "apps/mobile/index.js",
+          "hash": "1184010334168630581",
+          "deps": [
+            "npm:expo@54.0.33"
+          ]
+        },
+        {
+          "file": "apps/mobile/jest.config.cts",
+          "hash": "9525809066882370395",
+          "deps": [
+            "npm:jest-expo@54.0.17"
+          ]
+        },
+        {
+          "file": "apps/mobile/metro.config.js",
+          "hash": "14770979835262039187",
+          "deps": [
+            "npm:@nx/expo@22.6.5",
+            "npm:@expo/metro-config@54.0.14",
+            "npm:metro-config@0.84.3",
+            "npm:react-native-svg-transformer@1.5.3"
+          ]
+        },
+        {
+          "file": "apps/mobile/package.json",
+          "hash": "13031895101485858485",
+          "deps": [
+            "npm:@expo/metro-config@54.0.14",
+            "npm:@testing-library/react-native@13.2.2",
+            "npm:expo@54.0.33",
+            "npm:expo-splash-screen@31.0.13",
+            "npm:expo-status-bar@3.0.9",
+            "npm:expo-system-ui@6.0.9",
+            "npm:jest-expo@54.0.17",
+            "npm:metro-config@0.84.3",
+            "npm:metro-resolver@0.84.3",
+            "npm:react@19.2.5",
+            "npm:react-native@0.81.5",
+            "npm:react-native-svg@15.12.1",
+            "npm:react-native-svg-transformer@1.5.3",
+            "npm:react-native-web@0.21.2"
+          ]
+        },
+        {
+          "file": "apps/mobile/project.json",
+          "hash": "15585596462662357560"
+        },
+        {
+          "file": "apps/mobile/src/app/App.spec.tsx",
+          "hash": "2020774011025408804",
+          "deps": [
+            "npm:@testing-library/react-native@13.2.2",
+            "npm:react@19.2.5"
+          ]
+        },
+        {
+          "file": "apps/mobile/src/app/App.tsx",
+          "hash": "479651203538423204",
+          "deps": [
+            "npm:expo-status-bar@3.0.9",
+            "npm:react-native@0.81.5"
+          ]
+        },
+        {
+          "file": "apps/mobile/src/env.ts",
+          "hash": "14345850504566758161",
+          "deps": [
+            "npm:@t3-oss/env-core@0.13.11",
+            "npm:zod@4.3.6"
+          ]
+        },
+        {
+          "file": "apps/mobile/src/test-setup.ts",
+          "hash": "17858457071564122017"
+        },
+        {
+          "file": "apps/mobile/tsconfig.app.json",
+          "hash": "15838782261676867430"
+        },
+        {
+          "file": "apps/mobile/tsconfig.json",
+          "hash": "468433131907124533"
+        },
+        {
+          "file": "apps/mobile/tsconfig.spec.json",
+          "hash": "5689281065018222892"
+        }
+      ],
+      "i18n": [
+        {
+          "file": "libs/i18n/project.json",
+          "hash": "10871257073193663941"
+        },
+        {
+          "file": "libs/i18n/src/index.ts",
+          "hash": "16043774610243694443"
+        },
+        {
+          "file": "libs/i18n/src/lib/i18n.ts",
+          "hash": "2488450377393176114"
+        },
+        {
+          "file": "libs/i18n/src/locales/en.json",
+          "hash": "7590347896383477333"
+        },
+        {
+          "file": "libs/i18n/src/locales/pl.json",
+          "hash": "10268696303878694287"
+        },
+        {
+          "file": "libs/i18n/tsconfig.json",
+          "hash": "7566250232229013883"
+        },
+        {
+          "file": "libs/i18n/tsconfig.lib.json",
+          "hash": "15798669420171897096"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "17010760152382070647"
+}

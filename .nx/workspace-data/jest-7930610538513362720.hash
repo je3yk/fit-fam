@@ -1,0 +1,48 @@
+{
+  "14281044511733324272": {
+    "targets": {
+      "test": {
+        "command": "jest",
+        "options": {
+          "cwd": "apps/mobile",
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+          }
+        },
+        "metadata": {
+          "technologies": [
+            "jest"
+          ],
+          "description": "Run Jest Tests",
+          "help": {
+            "command": "bun jest --help",
+            "example": {
+              "options": {
+                "coverage": true
+              }
+            }
+          }
+        },
+        "cache": true,
+        "inputs": [
+          "default",
+          "^production",
+          "{projectRoot}/src/test-setup.ts",
+          {
+            "externalDependencies": [
+              "jest",
+              "jest-expo",
+              "react-native",
+              "@expo/vector-icons",
+              "@nx/expo",
+              "babel-jest"
+            ]
+          }
+        ],
+        "outputs": [
+          "{workspaceRoot}/coverage/apps/mobile"
+        ]
+      }
+    }
+  }
+}

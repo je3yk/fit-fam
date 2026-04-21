@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ES2022",
+    "lib": ["ES2022", "dom", "dom.iterable"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "strict": true,
+    "paths": {
+      "@fit-fam/types": ["libs/types/src/index.ts"],
+      "@fit-fam/i18n": ["libs/i18n/src/index.ts"],
+      "@fit-fam/db": ["libs/db/src/index.ts"],
+      "@fit-fam/api": ["libs/api/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp", ".nx/cache", ".next", "dist"]
+}

@@ -69,6 +69,25 @@ fit-fam/
 | AI (v2+) | Vercel AI SDK |
 | File uploads | UploadThing |
 
+### Tooling
+
+| Concern | Technology |
+|---|---|
+| Package manager | Bun |
+| Code quality | Biome (lint + format) |
+| TypeScript | `strict: true`, inference-first |
+| Env validation | t3-env + Zod (per-app, validated on startup) |
+| CI | GitHub Actions (Biome check + `tsc --noEmit` on push/PR) |
+| Git hooks | None (revisit before production) |
+
+### Testing
+
+| Scope | Runner | Libraries |
+|---|---|---|
+| `libs/api`, `libs/db`, `libs/types`, `libs/i18n` | Bun test | — |
+| `apps/web` | Jest | `@testing-library/react`, jsdom |
+| `apps/mobile` | Jest | `@testing-library/react-native` |
+
 ### Infrastructure
 
 | Concern | Production | Local Development |

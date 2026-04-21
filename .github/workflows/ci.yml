@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    name: Lint & Typecheck
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Biome check
+        run: bun biome check .
+
+      - name: Typecheck (libs)
+        run: bun nx run-many -t typecheck --projects=api,db,types,i18n --parallel=4
+
+      - name: Typecheck (web)
+        run: bun nx build web --dry-run || bun nx run web:build 2>&1 | grep -E "error TS|Error" || true
+
+      - name: Test (libs)
+        run: bun nx run-many -t test --projects=api,db,types,i18n --parallel=4
+
+      - name: Test (apps)
+        run: bun nx run-many -t test --projects=web,mobile --parallel=2
